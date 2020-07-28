@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+   function validate()
+  {
+    p=t1.value;
+
+  var i;
+  var count=0;
+  if( /^([0-9]{6})$/.test(p)==false)
+  {
+  window.alert("please enter the pincode");
+   t1.focus();
+  return false;
+  }
+
+  else
+{
+
+return true;
+
+}
+
+  }
+  </script>
+
+</head>
+<body>
+<form action="pro1.php" onsubmit="return validate()" method="post">
+pincode:<input type="text"  id="t1" name="pincode" placeholder="Enter the pincode" required /><br>
+<br><input id="t2" type="submit" name="submit" value="submit"/>
+<input type="reset" value="reset"/>
+</form>
+
+</body>
+</html>
